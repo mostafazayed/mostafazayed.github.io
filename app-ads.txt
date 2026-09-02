@@ -1,6 +1,6 @@
 # app-ads.txt - FlyingCats / Native Games
 # Published at https://mostafazayed.github.io/app-ads.txt (text/plain, UTF-8).
-# Lines 1-3 are this publisher's own direct relationships; everything below them
+# Lines 1-4 are this publisher's own direct relationships; everything below them
 # is the authorised-seller list Unity publishes for the buyers that resell this
 # inventory through Unity Ads, copied verbatim from the Unity dashboard
 # (Settings > app-ads.txt) - never retyped.
@@ -14,6 +14,7 @@
 google.com, pub-5205469027740582, DIRECT, f08c47fec0942fa0
 facebook.com, 285681498947078, RESELLER, c3e20eee3f780d68
 pangleglobal.com, 5042811, DIRECT
+vungle.com, 6a986ae07a4c6baedc517fbf, DIRECT, c107d686becd2d77
 media.net, 8cuh46n56, RESELLER
 media.net, 8cuuq286l, RESELLER
 media.net, 8cusc3uj7, RESELLER
