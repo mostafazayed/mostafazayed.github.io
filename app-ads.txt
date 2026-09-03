@@ -17,7 +17,7 @@ pangleglobal.com, 5042811, DIRECT
 vungle.com, 6a986ae07a4c6baedc517fbf, DIRECT, c107d686becd2d77
 media.net, 8cuh46n56, RESELLER
 media.net, 8cuuq286l, RESELLER
-media.net, 8cusc3uj7, RESELLER
+media.net, 8CUSC3UJ7, RESELLER
 media.net, 8cu675n41, RESELLER
 programmaticx.ai, 84448, RESELLER, b42d42eb28400efa
 pubmatic.com, 159501, RESELLER, 5d62403b186f2ace
