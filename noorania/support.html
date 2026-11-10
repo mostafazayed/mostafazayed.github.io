@@ -1,102 +1,217 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Noorania — Support</title>
+<meta name="description" content="Support for Noorania, the app for learning to read the Quran by the Noorania Qaida method. Contact, common questions, account deletion and subscriptions.">
+<link rel="canonical" href="https://noorania.org/support.html">
 <style>
-  :root { --ink:#1e1c17; --muted:#6b675e; --line:#e2ddd2; --ground:#faf7f0; --accent:#4a5c3a; }
-  * { box-sizing:border-box; }
-  body { margin:0; background:var(--ground); color:var(--ink);
-         font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif; }
-  main { max-width:44rem; margin:0 auto; padding:2.5rem 1.25rem 4rem; }
-  h1 { font-size:1.7rem; margin:0 0 .25rem; }
-  h2 { font-size:1.15rem; margin:2rem 0 .5rem; color:var(--accent); }
-  .updated { color:var(--muted); font-size:.9rem; margin:0 0 1.5rem; }
-  hr { border:0; border-top:1px solid var(--line); margin:3rem 0; }
-  ul { padding-inline-start:1.25rem; }
-  li { margin:.35rem 0; }
-  a { color:var(--accent); }
-  .rtl { direction:rtl; text-align:right; }
-  .rtl ul { padding-inline-start:1.25rem; }
+  :root {
+    --ink: #1e1c17;
+    --muted: #6b675e;
+    --line: #e2ddd2;
+    --ground: #faf7f0;
+    --card: #ffffff;
+    --accent: #4a5c3a;
+    --accent-soft: #eef1e8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink: #efeadd;
+      --muted: #a39e90;
+      --line: #36342d;
+      --ground: #17160f;
+      --card: #201f17;
+      --accent: #a9c08f;
+      --accent-soft: #272b1f;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Naskh Arabic", Arial, sans-serif;
+  }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+
+  header.site {
+    border-bottom: 1px solid var(--line);
+  }
+  header.site .bar {
+    max-width: 46rem; margin: 0 auto; padding: .9rem 1.25rem;
+    display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+  }
+  .brand { font-weight: 700; font-size: 1.1rem; color: var(--ink); text-decoration: none; letter-spacing: .01em; }
+  .jump a { font-size: .9rem; color: var(--muted); text-decoration: none; }
+  .jump a:hover { color: var(--accent); }
+
+  main { max-width: 46rem; margin: 0 auto; padding: 2.5rem 1.25rem 3rem; }
+  section.lang + section.lang { margin-top: 4rem; padding-top: 3rem; border-top: 1px solid var(--line); }
+
+  h1 { font-size: clamp(1.7rem, 5vw, 2.2rem); line-height: 1.25; margin: 0 0 .5rem; }
+  h2 { font-size: 1.15rem; margin: 2.25rem 0 .75rem; color: var(--accent); }
+  .lede { font-size: 1.05rem; color: var(--ink); margin: 0 0 .75rem; }
+  .updated { color: var(--muted); font-size: .88rem; margin: 0 0 1.5rem; }
+
+  .contact {
+    background: var(--accent-soft);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 1.25rem 1.4rem;
+    margin: 1.75rem 0 0;
+  }
+  .contact h2 { margin: 0 0 .4rem; }
+  .contact p { margin: .25rem 0; }
+  .contact .mail { font-size: 1.1rem; font-weight: 600; word-break: break-all; }
+  .contact .meta { color: var(--muted); font-size: .92rem; }
+
+  details {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    margin: .6rem 0;
+    padding: 0 1.1rem;
+  }
+  summary {
+    cursor: pointer; font-weight: 600; padding: .85rem 0; list-style: none;
+    display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: "+"; color: var(--accent); font-size: 1.3rem; line-height: 1; flex: none; }
+  details[open] summary::after { content: "–"; }
+  details > p { margin: 0 0 1rem; color: var(--ink); }
+
+  ul.links { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; }
+
+  .rtl { direction: rtl; text-align: right; }
+
+  footer {
+    max-width: 46rem; margin: 0 auto; padding: 1.5rem 1.25rem 3rem;
+    border-top: 1px solid var(--line); color: var(--muted); font-size: .88rem;
+    display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 1.5rem;
+  }
 </style>
 </head>
 <body>
+
+<header class="site">
+  <div class="bar">
+    <a class="brand" href="https://noorania.org">Noorania · نورانية</a>
+    <nav class="jump" aria-label="Language">
+      <a href="#en">English</a> · <a href="#ar" lang="ar">العربية</a>
+    </nav>
+  </div>
+</header>
+
 <main>
 
-<h1>Noorania — Support</h1>
-<p class="updated">Last updated: 27 August 2026</p>
+<!-- ============ English ============ -->
+<section class="lang" id="en" lang="en" dir="ltr">
+  <h1>Noorania Support</h1>
+  <p class="updated">Last updated: 10 November 2026</p>
+  <p class="lede">Noorania teaches reading the Quran by the Noorania Qaida method: seventeen lessons,
+  from the single letter to reading a whole word, each item in a teacher’s voice.</p>
 
-<p>Noorania teaches reading the Quran by the Noorania Qaida method: seventeen lessons,
-from the single letter to reading a whole word, each item in a teacher's voice.</p>
+  <div class="contact">
+    <h2>Getting help</h2>
+    <p class="mail"><a href="mailto:mostafa@noorania.org">mostafa@noorania.org</a></p>
+    <p class="meta">Tell us which device you are on and which lesson or screen the problem is in, and we will answer.</p>
+    <p class="meta">Website: <a href="https://noorania.org">noorania.org</a></p>
+  </div>
 
-<h2>Getting help</h2>
-<p>Write to <a href="mailto:zayedalcatel@gmail.com">zayedalcatel@gmail.com</a>. Tell us
-which device you are on and which lesson or screen the problem is in, and we will
-answer.</p>
+  <h2>Common questions</h2>
 
-<h2>Common questions</h2>
-<ul>
-  <li><strong>My pronunciation score will not come.</strong> Scoring needs a
-      connection: your recording is graded by our service and then discarded. With no
-      connection the app tells you so and offers the teacher's recording to compare
-      against.</li>
-  <li><strong>My daily practice allowance ran out.</strong> It renews each day. A
-      subscription raises it considerably; you can also watch a short video for more
-      time now.</li>
-  <li><strong>My progress is gone after reinstalling.</strong> Progress is restored
-      from the account you signed in with. Sign in with the same Google or Apple
-      account and it comes back.</li>
-  <li><strong>I want my account and data deleted.</strong> Write from the email address
-      you signed in with. Deletion is permanent and covers your progress, your account
-      record, and any diagnostics tied to it.</li>
-  <li><strong>Managing or cancelling a subscription.</strong> Subscriptions are handled
-      by Apple, in Settings on your device, not by us.</li>
-</ul>
+  <details>
+    <summary>My pronunciation score will not come</summary>
+    <p>Scoring needs a connection: your recording is graded by our service and then discarded.
+    With no connection the app tells you so and offers the teacher’s recording to compare against.</p>
+  </details>
+  <details>
+    <summary>My daily practice allowance ran out</summary>
+    <p>It renews each day. A subscription raises it considerably; you can also watch a short video
+    for more time now.</p>
+  </details>
+  <details>
+    <summary>My progress is gone after reinstalling</summary>
+    <p>Progress is restored from the account you signed in with. Sign in with the same Google or
+    Apple account and it comes back.</p>
+  </details>
+  <details>
+    <summary>I want my account and data deleted</summary>
+    <p>Write to <a href="mailto:mostafa@noorania.org">mostafa@noorania.org</a> from the email address
+    you signed in with. Deletion is permanent and covers your progress, your account record, and any
+    diagnostics tied to it.</p>
+  </details>
+  <details>
+    <summary>Managing or cancelling a subscription</summary>
+    <p>Subscriptions are handled by Apple, in Settings on your device, not by us.</p>
+  </details>
 
-<h2>Also here</h2>
-<ul>
-  <li><a href="privacy.html">Privacy Policy</a></li>
-  <li><a href="terms.html">Terms of Use</a></li>
-</ul>
+  <h2>Also here</h2>
+  <ul class="links">
+    <li><a href="privacy.html">Privacy Policy</a></li>
+    <li><a href="terms.html">Terms of Use</a></li>
+    <li><a href="https://noorania.org">noorania.org</a></li>
+  </ul>
+</section>
 
-<hr>
+<!-- ============ العربية ============ -->
+<section class="lang rtl" id="ar" lang="ar" dir="rtl">
+  <h1>الدعم — نورانية</h1>
+  <p class="updated">آخر تحديث: ١٠ نوفمبر ٢٠٢٦</p>
+  <p class="lede">نورانية تطبيق لتعلّم قراءة القرآن بطريقة القاعدة النورانية: سبعة عشر درسًا، من الحرف
+  المفرد إلى قراءة الكلمة، وكل عنصر بصوت معلّم.</p>
 
-<div class="rtl" lang="ar">
+  <div class="contact">
+    <h2>كيف تحصل على المساعدة</h2>
+    <p class="mail"><a href="mailto:mostafa@noorania.org" dir="ltr">mostafa@noorania.org</a></p>
+    <p class="meta">اذكر جهازك وأي درس أو شاشة فيها المشكلة، وسنردّ عليك.</p>
+    <p class="meta">الموقع: <a href="https://noorania.org" dir="ltr">noorania.org</a></p>
+  </div>
 
-<h1>نورانية — الدعم</h1>
-<p class="updated">آخر تحديث: ٢٧ أغسطس ٢٠٢٦</p>
+  <h2>أسئلة متكرّرة</h2>
 
-<p>نورانية تطبيق لتعلّم قراءة القرآن بطريقة القاعدة النورانية: سبعة عشر درسًا، من الحرف
-المفرد إلى قراءة الكلمة، وكل عنصر بصوت معلّم.</p>
+  <details>
+    <summary>درجة النطق لا تظهر</summary>
+    <p>التقييم يحتاج اتصالًا: تسجيلك يُقيَّم في خدمتنا ثم يُحذف. وبدون اتصال يخبرك التطبيق بذلك
+    ويعرض عليك نموذج المعلّم لتقارن به.</p>
+  </details>
+  <details>
+    <summary>انتهى رصيد التدريب اليومي</summary>
+    <p>يتجدّد كل يوم. والاشتراك يرفعه كثيرًا، ويمكنك أيضًا مشاهدة مقطع قصير للحصول على وقت إضافي الآن.</p>
+  </details>
+  <details>
+    <summary>فقدت تقدّمي بعد إعادة التثبيت</summary>
+    <p>التقدّم يُستعاد من الحساب الذي سجّلت به. سجّل الدخول بنفس حساب جوجل أو آبل وسيعود.</p>
+  </details>
+  <details>
+    <summary>أريد حذف حسابي وبياناتي</summary>
+    <p>اكتب إلى <a href="mailto:mostafa@noorania.org" dir="ltr">mostafa@noorania.org</a> من البريد نفسه
+    الذي سجّلت به. الحذف نهائي ويشمل تقدّمك وسجلّ حسابك وأي تشخيصات مرتبطة به.</p>
+  </details>
+  <details>
+    <summary>إدارة الاشتراك أو إلغاؤه</summary>
+    <p>الاشتراكات تديرها آبل من إعدادات جهازك، لا نحن.</p>
+  </details>
 
-<h2>كيف تحصل على المساعدة</h2>
-<p>اكتب إلى <a href="mailto:zayedalcatel@gmail.com">zayedalcatel@gmail.com</a>. اذكر
-جهازك وأي درس أو شاشة فيها المشكلة، وسنردّ عليك.</p>
-
-<h2>أسئلة متكرّرة</h2>
-<ul>
-  <li><strong>درجة النطق لا تظهر.</strong> التقييم يحتاج اتصالًا: تسجيلك يُقيَّم في
-      خدمتنا ثم يُحذف. وبدون اتصال يخبرك التطبيق بذلك ويعرض عليك نموذج المعلّم
-      لتقارن به.</li>
-  <li><strong>انتهى رصيد التدريب اليومي.</strong> يتجدّد كل يوم. والاشتراك يرفعه كثيرًا،
-      ويمكنك أيضًا مشاهدة مقطع قصير للحصول على وقت إضافي الآن.</li>
-  <li><strong>فقدت تقدّمي بعد إعادة التثبيت.</strong> التقدّم يُستعاد من الحساب الذي
-      سجّلت به. سجّل الدخول بنفس حساب جوجل أو آبل وسيعود.</li>
-  <li><strong>أريد حذف حسابي وبياناتي.</strong> اكتب إلينا من البريد نفسه الذي سجّلت به.
-      الحذف نهائي ويشمل تقدّمك وسجلّ حسابك وأي تشخيصات مرتبطة به.</li>
-  <li><strong>إدارة الاشتراك أو إلغاؤه.</strong> الاشتراكات تديرها آبل من إعدادات جهازك،
-      لا نحن.</li>
-</ul>
-
-<h2>صفحات أخرى</h2>
-<ul>
-  <li><a href="privacy.html">سياسة الخصوصية</a></li>
-  <li><a href="terms.html">شروط الاستخدام</a></li>
-</ul>
-
-</div>
+  <h2>صفحات أخرى</h2>
+  <ul class="links">
+    <li><a href="privacy.html">سياسة الخصوصية</a></li>
+    <li><a href="terms.html">شروط الاستخدام</a></li>
+    <li><a href="https://noorania.org" dir="ltr">noorania.org</a></li>
+  </ul>
+</section>
 
 </main>
+
+<footer>
+  <span>© 2026 Noorania · نورانية</span>
+  <a href="https://noorania.org">noorania.org</a>
+</footer>
+
 </body>
 </html>
