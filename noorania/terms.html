@@ -1,152 +1,233 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Noorania — Terms of Use</title>
+<meta name="description" content="Terms of Use for Noorania: free use, subscriptions, practice packs, refunds and acceptable use.">
+<link rel="canonical" href="https://noorania.org/terms.html">
 <style>
-  :root { --ink:#1e1c17; --muted:#6b675e; --line:#e2ddd2; --ground:#faf7f0; --accent:#4a5c3a; }
-  * { box-sizing:border-box; }
-  body { margin:0; background:var(--ground); color:var(--ink);
-         font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif; }
-  main { max-width:44rem; margin:0 auto; padding:2.5rem 1.25rem 4rem; }
-  h1 { font-size:1.7rem; margin:0 0 .25rem; }
-  h2 { font-size:1.15rem; margin:2rem 0 .5rem; color:var(--accent); }
-  .updated { color:var(--muted); font-size:.9rem; margin:0 0 1.5rem; }
-  hr { border:0; border-top:1px solid var(--line); margin:3rem 0; }
-  ul { padding-inline-start:1.25rem; }
-  li { margin:.35rem 0; }
-  a { color:var(--accent); }
-  .rtl { direction:rtl; text-align:right; }
+  :root {
+    --ink: #1e1c17;
+    --muted: #6b675e;
+    --line: #e2ddd2;
+    --ground: #faf7f0;
+    --card: #ffffff;
+    --accent: #4a5c3a;
+    --accent-soft: #eef1e8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink: #efeadd;
+      --muted: #a39e90;
+      --line: #36342d;
+      --ground: #17160f;
+      --card: #201f17;
+      --accent: #a9c08f;
+      --accent-soft: #272b1f;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Naskh Arabic", Arial, sans-serif;
+  }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+
+  header.site { border-bottom: 1px solid var(--line); }
+  header.site .bar {
+    max-width: 46rem; margin: 0 auto; padding: .9rem 1.25rem;
+    display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+  }
+  .brand { font-weight: 700; font-size: 1.1rem; color: var(--ink); text-decoration: none; letter-spacing: .01em; }
+  .jump a { font-size: .9rem; color: var(--muted); text-decoration: none; }
+  .jump a:hover { color: var(--accent); }
+
+  main { max-width: 46rem; margin: 0 auto; padding: 2.5rem 1.25rem 3rem; }
+  section.lang + section.lang { margin-top: 4rem; padding-top: 3rem; border-top: 1px solid var(--line); }
+
+  h1 { font-size: clamp(1.7rem, 5vw, 2.2rem); line-height: 1.25; margin: 0 0 .5rem; }
+  h2 { font-size: 1.15rem; margin: 2.25rem 0 .6rem; color: var(--accent); }
+  .lede { font-size: 1.05rem; margin: 0 0 .75rem; }
+  .updated { color: var(--muted); font-size: .88rem; margin: 0 0 1.5rem; }
+
+  ul { padding-inline-start: 1.25rem; }
+  li { margin: .5rem 0; }
+  li::marker { color: var(--accent); }
+
+  .note {
+    background: var(--accent-soft);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 1.1rem 1.4rem;
+    margin: 1.5rem 0 0;
+  }
+  .note h2 { margin: 0 0 .4rem; }
+  .note p { margin: .25rem 0; }
+  .mail { font-size: 1.1rem; font-weight: 600; word-break: break-all; }
+
+  .rtl { direction: rtl; text-align: right; }
+
+  footer {
+    max-width: 46rem; margin: 0 auto; padding: 1.5rem 1.25rem 3rem;
+    border-top: 1px solid var(--line); color: var(--muted); font-size: .88rem;
+    display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 1.5rem;
+  }
 </style>
 </head>
 <body>
+
+<header class="site">
+  <div class="bar">
+    <a class="brand" href="https://noorania.org">Noorania · نورانية</a>
+    <nav class="jump" aria-label="Language">
+      <a href="#en">English</a> · <a href="#ar" lang="ar">العربية</a>
+    </nav>
+  </div>
+</header>
+
 <main>
 
-<h1>Noorania — Terms of Use</h1>
-<p class="updated">Last updated: 26 August 2026</p>
+<!-- ============ English ============ -->
+<section class="lang" id="en" lang="en" dir="ltr">
+  <h1>Terms of Use</h1>
+  <p class="updated">Last updated: 10 November 2026</p>
+  <p class="lede">These terms cover your use of the Noorania app. Using the app means accepting them.
+  Apple’s <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Standard
+  End User License Agreement</a> also applies to the app itself.</p>
 
-<p>These terms cover your use of the Noorania app. Using the app means accepting them.
-Apple's <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Standard
-End User License Agreement</a> also applies to the app itself.</p>
+  <h2>What the app is</h2>
+  <p>Noorania teaches Arabic reading by the Noorania Qaida method: recorded lessons to
+  listen to, and pronunciation practice that scores what you say. The pronunciation score
+  is an aid to learning, not a religious ruling or a certification, and it should not be
+  treated as a substitute for a qualified teacher.</p>
 
-<h2>What the app is</h2>
-<p>Noorania teaches Arabic reading by the Noorania Qaida method: recorded lessons to
-listen to, and pronunciation practice that scores what you say. The pronunciation score
-is an aid to learning, not a religious ruling or a certification, and it should not be
-treated as a substitute for a qualified teacher.</p>
+  <h2>Free use</h2>
+  <p>Every lesson and its audio can be used without paying and without an account. Free
+  use includes advertising and a daily allowance of pronunciation scoring.</p>
 
-<h2>Free use</h2>
-<p>Every lesson and its audio can be used without paying and without an account. Free
-use includes advertising and a daily allowance of pronunciation scoring.</p>
+  <h2>Subscriptions</h2>
+  <ul>
+    <li>Noorania offers a <strong>monthly</strong> and a <strong>yearly</strong>
+        subscription. Each removes advertising and raises the pronunciation-scoring
+        allowance.</li>
+    <li>The price and the period are shown in the app before you buy, in your own
+        currency, and payment is charged to your Apple ID at confirmation.</li>
+    <li><strong>A subscription renews automatically</strong> unless it is cancelled at
+        least 24 hours before the current period ends. Your Apple ID is charged for
+        renewal within 24 hours of the period ending.</li>
+    <li>You can manage or cancel a subscription at any time in
+        <em>Settings → your name → Subscriptions</em> on your device. Deleting the app
+        does not cancel a subscription.</li>
+    <li>Cancelling stops the next renewal; the current period runs to its end.</li>
+  </ul>
 
-<h2>Subscriptions</h2>
-<ul>
-  <li>Noorania offers a <strong>monthly</strong> and a <strong>yearly</strong>
-      subscription. Each removes advertising and raises the pronunciation-scoring
-      allowance.</li>
-  <li>The price and the period are shown in the app before you buy, in your own
-      currency, and payment is charged to your Apple ID at confirmation.</li>
-  <li><strong>A subscription renews automatically</strong> unless it is cancelled at
-      least 24 hours before the current period ends. Your Apple ID is charged for
-      renewal within 24 hours of the period ending.</li>
-  <li>You can manage or cancel a subscription at any time in
-      <em>Settings → your name → Subscriptions</em> on your device. Deleting the app
-      does not cancel a subscription.</li>
-  <li>Cancelling stops the next renewal; the current period runs to its end.</li>
-</ul>
+  <h2>Practice packs</h2>
+  <p>A practice pack is a one-off purchase that adds a fixed amount of pronunciation
+  scoring time. It is consumed as you use it and does not renew.</p>
 
-<h2>Practice packs</h2>
-<p>A practice pack is a one-off purchase that adds a fixed amount of pronunciation
-scoring time. It is consumed as you use it and does not renew.</p>
+  <h2>Refunds</h2>
+  <p>Purchases are handled by Apple, so refunds are Apple’s to give. Request one at
+  <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>. We cannot
+  refund an App Store purchase ourselves.</p>
 
-<h2>Refunds</h2>
-<p>Purchases are handled by Apple, so refunds are Apple's to give. Request one at
-<a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>. We cannot
-refund an App Store purchase ourselves.</p>
+  <h2>Restoring purchases</h2>
+  <p>Purchases are tied to your Apple ID. On a new device, use <em>Restore purchases</em>
+  on the subscription screen.</p>
 
-<h2>Restoring purchases</h2>
-<p>Purchases are tied to your Apple ID. On a new device, use <em>Restore purchases</em>
-on the subscription screen.</p>
+  <h2>Acceptable use</h2>
+  <p>The lesson recordings and the printed pages in the app are licensed for personal
+  learning. Please do not redistribute them, extract them for another product, or copy the
+  app’s pronunciation scoring for use outside the app.</p>
 
-<h2>Acceptable use</h2>
-<p>The lesson recordings and the printed pages in the app are licensed for personal
-learning. Please do not redistribute them, extract them for another product, or try to
-reach the scoring service other than through the app.</p>
+  <h2>Availability</h2>
+  <p>The app is provided as it is. Lessons and pronunciation scoring work offline once
+  installed; sign-in and progress sync need a connection and can be interrupted by
+  things outside our control.</p>
 
-<h2>Availability</h2>
-<p>The app is provided as it is. Lessons work offline once installed; sign-in,
-progress sync and pronunciation scoring need a connection and can be interrupted by
-things outside our control.</p>
+  <h2>Changes</h2>
+  <p>If these terms change materially, the date at the top changes with them.</p>
 
-<h2>Changes</h2>
-<p>If these terms change materially, the date at the top changes with them.</p>
+  <div class="note">
+    <h2>Contact</h2>
+    <p class="mail"><a href="mailto:mostafa@noorania.org">mostafa@noorania.org</a></p>
+    <p>Website: <a href="https://noorania.org">noorania.org</a></p>
+  </div>
+</section>
 
-<h2>Contact</h2>
-<p><a href="mailto:zayedalcatel@gmail.com">zayedalcatel@gmail.com</a></p>
+<!-- ============ العربية ============ -->
+<section class="lang rtl" id="ar" lang="ar" dir="rtl">
+  <h1>شروط الاستخدام</h1>
+  <p class="updated">آخر تحديث: ١٠ نوفمبر ٢٠٢٦</p>
+  <p class="lede">تحكم هذه الشروط استخدامك لتطبيق نورانية، واستخدامك للتطبيق قبول لها. كما تسري على
+  التطبيق نفسه
+  <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">اتفاقية
+  الترخيص القياسية للمستخدم النهائي</a> من آبل.</p>
 
-<hr>
+  <h2>ما هو التطبيق</h2>
+  <p>يعلّم نورانية القراءة العربية بطريقة القاعدة النورانية: دروس مسجّلة للاستماع،
+  وتدريب على النطق يقيّم ما تقوله. ودرجة النطق عون على التعلّم، وليست حكمًا شرعيًّا ولا
+  إجازة، ولا تُغني عن معلّم متقن.</p>
 
-<div class="rtl" lang="ar">
-<h1>نورانية — شروط الاستخدام</h1>
-<p class="updated">آخر تحديث: ٢٦ أغسطس ٢٠٢٦</p>
+  <h2>الاستخدام المجاني</h2>
+  <p>كل درس وكل تسجيل فيه متاح دون دفع ودون حساب. ويصحب الاستخدامَ المجاني إعلاناتٌ
+  وحدٌّ يوميّ من تقييم النطق.</p>
 
-<p>تحكم هذه الشروط استخدامك لتطبيق نورانية، واستخدامك للتطبيق قبول لها. كما تسري على
-التطبيق نفسه
-<a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">اتفاقية
-الترخيص القياسية للمستخدم النهائي</a> من آبل.</p>
+  <h2>الاشتراكات</h2>
+  <ul>
+    <li>يقدّم نورانية اشتراكًا <strong>شهريًّا</strong> وآخر <strong>سنويًّا</strong>،
+        وكلاهما يزيل الإعلانات ويرفع حدّ تقييم النطق.</li>
+    <li>يُعرض السعر والمدّة داخل التطبيق قبل الشراء بعملتك، ويُخصم المبلغ من حساب آبل
+        عند التأكيد.</li>
+    <li><strong>يتجدّد الاشتراك تلقائيًّا</strong> ما لم يُلغَ قبل نهاية المدّة الجارية
+        بأربع وعشرين ساعة على الأقل، ويُخصم مبلغ التجديد خلال أربع وعشرين ساعة من
+        انتهائها.</li>
+    <li>يمكنك إدارة اشتراكك أو إلغاؤه متى شئت من <em>الإعدادات ← اسمك ← الاشتراكات</em>
+        في جهازك. وحذف التطبيق لا يُلغي الاشتراك.</li>
+    <li>الإلغاء يوقف التجديد التالي، وتستمر المدّة الجارية إلى نهايتها.</li>
+  </ul>
 
-<h2>ما هو التطبيق</h2>
-<p>يعلّم نورانية القراءة العربية بطريقة القاعدة النورانية: دروس مسجّلة للاستماع،
-وتدريب على النطق يقيّم ما تقوله. ودرجة النطق عون على التعلّم، وليست حكمًا شرعيًّا ولا
-إجازة، ولا تُغني عن معلّم متقن.</p>
+  <h2>باقات التدريب</h2>
+  <p>باقة التدريب شراء لمرة واحدة يضيف قدرًا ثابتًا من وقت تقييم النطق، يُستهلك
+  باستعمالك إيّاه ولا يتجدّد.</p>
 
-<h2>الاستخدام المجاني</h2>
-<p>كل درس وكل تسجيل فيه متاح دون دفع ودون حساب. ويصحب الاستخدامَ المجاني إعلاناتٌ
-وحدٌّ يوميّ من تقييم النطق.</p>
+  <h2>الاسترداد</h2>
+  <p>المشتريات تتولّاها آبل، فالاسترداد إليها. اطلبه من
+  <a href="https://reportaproblem.apple.com" dir="ltr">reportaproblem.apple.com</a>، فلا نملك نحن
+  ردّ مبلغ اشتُري من متجر آبل.</p>
 
-<h2>الاشتراكات</h2>
-<ul>
-  <li>يقدّم نورانية اشتراكًا <strong>شهريًّا</strong> وآخر <strong>سنويًّا</strong>،
-      وكلاهما يزيل الإعلانات ويرفع حدّ تقييم النطق.</li>
-  <li>يُعرض السعر والمدّة داخل التطبيق قبل الشراء بعملتك، ويُخصم المبلغ من حساب آبل
-      عند التأكيد.</li>
-  <li><strong>يتجدّد الاشتراك تلقائيًّا</strong> ما لم يُلغَ قبل نهاية المدّة الجارية
-      بأربع وعشرين ساعة على الأقل، ويُخصم مبلغ التجديد خلال أربع وعشرين ساعة من
-      انتهائها.</li>
-  <li>يمكنك إدارة اشتراكك أو إلغاؤه متى شئت من <em>الإعدادات ← اسمك ← الاشتراكات</em>
-      في جهازك. وحذف التطبيق لا يُلغي الاشتراك.</li>
-  <li>الإلغاء يوقف التجديد التالي، وتستمر المدّة الجارية إلى نهايتها.</li>
-</ul>
+  <h2>استعادة المشتريات</h2>
+  <p>المشتريات مرتبطة بحساب آبل الخاص بك. وعلى جهاز جديد استخدم
+  <em>استعادة المشتريات</em> في شاشة الاشتراك.</p>
 
-<h2>باقات التدريب</h2>
-<p>باقة التدريب شراء لمرة واحدة يضيف قدرًا ثابتًا من وقت تقييم النطق، يُستهلك
-باستعمالك إيّاه ولا يتجدّد.</p>
+  <h2>حدود الاستخدام</h2>
+  <p>تسجيلات الدروس وصفحات الكتاب داخل التطبيق مرخّصة للتعلّم الشخصي. فلا تُعِد نشرها،
+  ولا تستخرجها لمنتج آخر، ولا تنسخ تقييم النطق في التطبيق لتستعمله خارجه.</p>
 
-<h2>الاسترداد</h2>
-<p>المشتريات تتولّاها آبل، فالاسترداد إليها. اطلبه من
-<a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>، فلا نملك نحن
-ردّ مبلغ اشتُري من متجر آبل.</p>
+  <h2>الإتاحة</h2>
+  <p>يُقدَّم التطبيق كما هو. تعمل الدروس وتقييم النطق دون اتصال بعد التثبيت، أمّا تسجيل
+  الدخول ومزامنة التقدّم فتحتاج اتصالًا وقد تنقطع لأسباب خارجة عن إرادتنا.</p>
 
-<h2>استعادة المشتريات</h2>
-<p>المشتريات مرتبطة بحساب آبل الخاص بك. وعلى جهاز جديد استخدم
-<em>استعادة المشتريات</em> في شاشة الاشتراك.</p>
+  <h2>التغييرات</h2>
+  <p>إن تغيّرت هذه الشروط تغيّرًا جوهريًّا تغيّر التاريخ في الأعلى معها.</p>
 
-<h2>حدود الاستخدام</h2>
-<p>تسجيلات الدروس وصفحات الكتاب داخل التطبيق مرخّصة للتعلّم الشخصي. فلا تُعِد نشرها،
-ولا تستخرجها لمنتج آخر، ولا تحاول الوصول إلى خدمة التقييم من غير التطبيق.</p>
-
-<h2>الإتاحة</h2>
-<p>يُقدَّم التطبيق كما هو. تعمل الدروس دون اتصال بعد التثبيت، أمّا تسجيل الدخول
-ومزامنة التقدّم وتقييم النطق فتحتاج اتصالًا وقد تنقطع لأسباب خارجة عن إرادتنا.</p>
-
-<h2>التغييرات</h2>
-<p>إن تغيّرت هذه الشروط تغيّرًا جوهريًّا تغيّر التاريخ في الأعلى معها.</p>
-
-<h2>التواصل</h2>
-<p><a href="mailto:zayedalcatel@gmail.com">zayedalcatel@gmail.com</a></p>
-</div>
+  <div class="note">
+    <h2>التواصل</h2>
+    <p class="mail"><a href="mailto:mostafa@noorania.org" dir="ltr">mostafa@noorania.org</a></p>
+    <p>الموقع: <a href="https://noorania.org" dir="ltr">noorania.org</a></p>
+  </div>
+</section>
 
 </main>
+
+<footer>
+  <span>© 2026 Noorania · نورانية</span>
+  <span><a href="support.html">Support · الدعم</a> · <a href="privacy.html">Privacy · الخصوصية</a></span>
+</footer>
+
 </body>
 </html>
